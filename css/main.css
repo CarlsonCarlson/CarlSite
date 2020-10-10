@@ -245,7 +245,7 @@ a:active {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  border: var(--red) solid 1px;
+  /*border: var(--red) solid 1px;*/
 }
 
 .welcome_background {
@@ -253,9 +253,10 @@ a:active {
   position: relative;
   width: 100%;
   height: 100vh;
-  /*TODO: configure for an image background*/
   /*TODO: look for a bunch of images with a blue base of the batcave*/
-  background-image: url("../img/batcaveBlue.jpg");
+  /*TODO: configure for an image background for tablet*/
+  /*background-image: url("../img/batcaveBlue.jpg");*/
+  background-image: url("../img/batcomputerBlue.jpg");
   background-size: cover;
   background-position: center center;
   /*center on desktop on landscape*/
@@ -272,7 +273,7 @@ a:active {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(12,16,20,0);
+  background-color: rgba(12,16,20,.7);
   background-size: cover;
   content: "";
 }
