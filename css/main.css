@@ -230,13 +230,6 @@ a:active {
   text-align: center;
 }
 
-/*#horiz-line {*/
-/*  width: 10em;*/
-/*  margin-left: auto;*/
-/*  margin-right: auto;*/
-/*  color: var(--almost_white_teal);*/
-/*}*/
-
 /*use this for when you have an image background on welcome_screen*/
 #welcome_screen {
   margin-top: 0;
@@ -253,16 +246,9 @@ a:active {
   position: relative;
   width: 100%;
   height: 100vh;
-  /*TODO: look for a bunch of images with a blue base of the batcave*/
-  /*TODO: configure for an image background for tablet*/
   background-image: url("../img/batcaveBlue.jpg");
   background-size: cover;
-  background-position: center center;
-  /*center on desktop on landscape*/
-  /*center on mobile landscape*/
-  /*60% on mobile portrait*/
-  /*65% on tablet portrait*/
-  /*95% on tablet landscape*/
+  background-position: 60% center;
 }
 
 /* Using a mask on top of the background image*/
@@ -279,17 +265,6 @@ a:active {
 
 /*For Tablet and Desktop sizes*/
 @media all and (orientation: portrait){
-  /*for vertical line mode*/
-  /*#welcome_screen {*/
-  /*  margin-top: 15vh;*/
-  /*  position: relative;*/
-  /*  box-sizing: border-box;*/
-  /*  !*border: var(--red) 1px solid;*!*/
-  /*  width: 100vw;*/
-  /*  height: 135vh;*/
-  /*  text-align: center;*/
-  /*}*/
-
   #welcome_screen p {
     position: relative;
     top: 7vh;
@@ -311,44 +286,9 @@ a:active {
     margin: auto;
     /*border: var(--lightest_cyan) 1px solid;*/
   }
-
-  /* Taken from the mobile landscape settings and shifted up and spread apart*/
-  /*#vert-line {*/
-  /*  position: absolute;*/
-  /*  !*height: 15em;*!*/
-  /*  height: 60vh;*/
-  /*  top: 55vh;*/
-  /*  left: 20vw;*/
-  /*  border: var(--very_light_teal) 1px solid;*/
-  /*}*/
-  /*#vert-line2 {*/
-  /*  position: absolute;*/
-  /*  !*height: 15em;*!*/
-  /*  height: 60vh;*/
-  /*  top: 70vh;*/
-  /*  left: 50vw;*/
-  /*  border: var(--light_teal) 1px solid;*/
-  /*}*/
-  /*#vert-line3 {*/
-  /*  position: absolute;*/
-  /*  height: 30vh;*/
-  /*  top: 85vh;*/
-  /*  left: 80vw;*/
-  /*  border: var(--dark_teal) 1px solid;*/
-  /*}*/
 }
 
 @media all and (orientation: landscape){
-  /*#welcome_screen {*/
-  /*  margin-top: 15vh;*/
-  /*  position: relative;*/
-  /*  box-sizing: border-box;*/
-  /*  border: var(--red) 1px solid;*/
-  /*  width: 100vw;*/
-  /*  height: 155vh;*/
-  /*  text-align: center;*/
-  /*}*/
-
   #welcome_screen p {
     position: relative;
     top: 7vh;
@@ -371,46 +311,11 @@ a:active {
     margin: auto;
     /*border: var(--lightest_cyan) 1px solid;*/
   }
-
-  /* Taken from the mobile landscape settings and shifted up*/
-  /*#vert-line {*/
-  /*  position: absolute;*/
-  /*  !*height: 15em;*!*/
-  /*  height: 60vh;*/
-  /*  top: 75vh;*/
-  /*  left: 35vw;*/
-  /*  border: var(--very_light_teal) 1px solid;*/
-  /*}*/
-  /*#vert-line2 {*/
-  /*  position: absolute;*/
-  /*  !*height: 15em;*!*/
-  /*  height: 60vh;*/
-  /*  top: 90vh;*/
-  /*  left: 50vw;*/
-  /*  border: var(--light_teal) 1px solid;*/
-  /*}*/
-  /*#vert-line3 {*/
-  /*  position: absolute;*/
-  /*  height: 30vh;*/
-  /*  top: 105vh;*/
-  /*  left: 65vw;*/
-  /*  border: var(--dark_teal) 1px solid;*/
-  /*}*/
 }
 
 /*for mobile devices*/
 @media all and (orientation: portrait) and (max-height: 480px),
 all and (orientation: portrait) and (max-width: 480px){
-  /*#welcome_screen {*/
-  /*  position: relative;*/
-  /*  margin-top: 20vh;*/
-  /*  box-sizing: border-box;*/
-  /*  border: var(--red) 1px solid;*/
-  /*  width: 100vw;*/
-  /*  height: 127vh;*/
-  /*  text-align: center;*/
-  /*}*/
-
   #welcome_screen p {
     position: relative;
     top: 22.5vh;
@@ -432,41 +337,10 @@ all and (orientation: portrait) and (max-width: 480px){
     padding: .5em;
     margin: auto;
   }
-  /*#vert-line {*/
-  /*  position: absolute;*/
-  /*  height: 30vh;*/
-  /*  top: 75vh;*/
-  /*  left: 20vw;*/
-  /*  border: var(--very_light_teal) 1px solid;*/
-  /*}*/
-  /*#vert-line2 {*/
-  /*  position: absolute;*/
-  /*  height: 30vh;*/
-  /*  top: 82.5vh;*/
-  /*  left: 50vw;*/
-  /*  border: var(--light_teal) 1px solid;*/
-  /*}*/
-  /*#vert-line3 {*/
-  /*  position: absolute;*/
-  /*  height: 15vh;*/
-  /*  top: 90vh;*/
-  /*  left: 80vw;*/
-  /*  border: var(--dark_teal) 1px solid;*/
-  /*}*/
 }
 
 @media all and (orientation: landscape) and (max-height: 480px),
 all and (orientation: landscape) and (max-width: 480px){
-  /*for vertical line mode*/
-  /*#welcome_screen {*/
-  /*  margin-top: 20vh;*/
-  /*  position: relative;*/
-  /*  box-sizing: border-box;*/
-  /*  border: var(--red) 1px solid;*/
-  /*  width: 100vw;*/
-  /*  height: 171vh;*/
-  /*  text-align: center;*/
-  /*}*/
   .welcome_background {
     margin-top: -4vh;
   }
@@ -491,30 +365,8 @@ all and (orientation: landscape) and (max-width: 480px){
     padding: .5em;
     margin: auto;
   }
-  /*#vert-line {*/
-  /*  position: absolute;*/
-  /*  !*height: 15em;*!*/
-  /*  height: 60vh;*/
-  /*  top: 90vh;*/
-  /*  left: 35vw;*/
-  /*  border: var(--very_light_teal) 1px solid;*/
-  /*}*/
-  /*#vert-line2 {*/
-  /*  position: absolute;*/
-  /*  !*height: 15em;*!*/
-  /*  height: 60vh;*/
-  /*  top: 105vh;*/
-  /*  left: 50vw;*/
-  /*  border: var(--light_teal) 1px solid;*/
-  /*}*/
-  /*#vert-line3 {*/
-  /*  position: absolute;*/
-  /*  height: 30vh;*/
-  /*  top: 120vh;*/
-  /*  left: 65vw;*/
-  /*  border: var(--dark_teal) 1px solid;*/
-  /*}*/
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
