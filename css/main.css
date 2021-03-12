@@ -61,6 +61,7 @@ a:active {
 
 .clr {
   clear: both;
+  border: var(--red);
 }
 
 /* Media Queries for Backgrounds*/
@@ -367,6 +368,40 @@ all and (orientation: landscape) and (max-width: 480px){
   }
 }
 
+.container {
+  width: 90%;
+  border: var(--green) 1px solid;
+  margin: 5%;
+  padding: .5em;
+  box-sizing: border-box;
+}
+
+.left_trophy {
+  border: var(--dark_blue) 1px solid;
+}
+
+.right_trophy {
+  border: var(--dark_blue) 1px solid;
+}
+
+.trophy_description {
+  border: var(--red) 1px solid;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.trophy_image {
+  float: right;
+  border: var(--yellow) 1px solid;
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+}
+
+.trophy_image img {
+  width: inherit;
+}
 
 /*
  * Remove text-shadow in selection highlight:
