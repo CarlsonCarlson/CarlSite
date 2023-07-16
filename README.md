@@ -1,4 +1,18 @@
 # carlSite
+
+I think the best way to proceed is to:
+0. Learn how they did the css and layout, then make a new branch to work on so you can reference this example in a different vscode window
+1. make a layout of the site on paper
+2. Think about how you would divide that into app, views, components, nested components, icons
+3. start
+
+notes:
+- all assets and icons should be made into components so they can be easily manipulated
+- They made a component for a list of items
+- each item has its own component (standard format)
+- if you want a part of the page to not change ever, make it its own view and embed in header of App.vue
+- if you want a part of the page to change, that is the routerView in App.vue
+
 ### Stack:
 - composition API
 - vite
