@@ -9,5 +9,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-// added content, TODO: why is module red
