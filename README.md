@@ -1,12 +1,13 @@
 # carlSite
 
 I think the best way to proceed is to:
-0. Learn how they did the css and layout, then make a new branch to work on so you can reference this example in a different vscode window
+
 1. make a layout of the site on paper
 2. Think about how you would divide that into app, views, components, nested components, icons
 3. start
 
 notes:
+
 - all assets and icons should be made into components so they can be easily manipulated
 - They made a component for a list of items
 - each item has its own component (standard format)
@@ -14,6 +15,7 @@ notes:
 - if you want a part of the page to change, that is the routerView in App.vue
 
 ### Stack:
+
 - composition API
 - vite
 <!-- - pinia (state management) -->
@@ -24,6 +26,7 @@ notes:
 - tailwindcss
 
 ### sites that look dope
+
 hyperscience.com
 
 TODO: Added style.css to ./src, IDK if i was supposed to do that or use the assets dir
@@ -42,8 +45,8 @@ TypeScript cannot handle type information for `.vue` imports by default, so we r
 If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
 1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 ## Customize configuration
