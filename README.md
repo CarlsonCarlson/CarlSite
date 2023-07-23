@@ -1,5 +1,9 @@
 # carlSite
 
+Binary rain is in website!!!
+TODO: Need to be able to commit it to my own fork of the repos
+TODO: Adjust settings to make it work as a background
+
 I think the best way to proceed is to:
 
 1. make a layout of the site on paper
