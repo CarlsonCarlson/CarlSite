@@ -23,6 +23,7 @@ notes:
 
 hyperscience.com
 
+TODO: arrow to indicate scroll up
 TODO: glitch effect on text
 TODO: put chinese name
 TODO: incorporate code_toad username
