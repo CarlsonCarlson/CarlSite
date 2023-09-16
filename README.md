@@ -1,14 +1,6 @@
 # carlSite
 
-TODO: Adjust settings to make it work as a background (look at matrix rain repo)
-
 Binary rain is in website!!!
-
-I think the best way to proceed is to:
-
-1. make a layout of the site on paper
-2. Think about how you would divide that into app, views, components, nested components, icons
-3. start
 
 notes:
 
