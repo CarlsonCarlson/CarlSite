@@ -1,18 +1,33 @@
 # carlSite
+
+Binary rain is in website!!!
+
+notes:
+
+- all assets and icons should be made into components so they can be easily manipulated
+- They made a component for a list of items
+- each item has its own component (standard format)
+- if you want a part of the page to not change ever, make it its own view and embed in header of App.vue
+- if you want a part of the page to change, that is the routerView in App.vue
+
 ### Stack:
+
 - composition API
 - vite
-<!-- - pinia (state management) -->
 - vue testing library to test individual components
-<!-- cypress testing framework later (testing) -->
 - volar (vscode extension)
 - typescript
 - tailwindcss
 
 ### sites that look dope
+
 hyperscience.com
 
-TODO: Added style.css to ./src, IDK if i was supposed to do that or use the assets dir
+TODO: glitch effect on text
+TODO: put chinese name
+TODO: incorporate code_toad username
+TODO: link to other socials and sites
+
 https://tailwindcss.com/docs/guides/vite#vue
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -28,8 +43,8 @@ TypeScript cannot handle type information for `.vue` imports by default, so we r
 If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
 1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 ## Customize configuration
