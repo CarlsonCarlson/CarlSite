@@ -1,8 +1,8 @@
 # carlSite
 
+TODO: Adjust settings to make it work as a background (look at matrix rain repo)
+
 Binary rain is in website!!!
-TODO: Need to be able to commit it to my own fork of the repos
-TODO: Adjust settings to make it work as a background
 
 I think the best way to proceed is to:
 
@@ -22,9 +22,7 @@ notes:
 
 - composition API
 - vite
-<!-- - pinia (state management) -->
 - vue testing library to test individual components
-<!-- cypress testing framework later (testing) -->
 - volar (vscode extension)
 - typescript
 - tailwindcss
@@ -33,7 +31,11 @@ notes:
 
 hyperscience.com
 
-TODO: Added style.css to ./src, IDK if i was supposed to do that or use the assets dir
+TODO: glitch effect on text
+TODO: put chinese name
+TODO: incorporate code_toad username
+TODO: link to other socials and sites
+
 https://tailwindcss.com/docs/guides/vite#vue
 
 This template should help get you started developing with Vue 3 in Vite.

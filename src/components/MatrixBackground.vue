@@ -1,6 +1,5 @@
 <template>
   <div>
-    hello
     <canvas ref="canvas"></canvas>
   </div>
 </template>
@@ -31,8 +30,40 @@ onMounted(async () => {
     return renderer.toLowerCase().includes('swiftshader')
   }
 
-  const urlParams = new URLSearchParams(window.location.search)
-  const config = makeConfig(Object.fromEntries(urlParams.entries()))
+  // make fake urlPsudo apt updatearams that are actually just my settings
+  const mySettings = {
+    // "effect": "pride", // makes it have yellow for some reason
+    // "effect": "plain",
+    // "effect": "image", // multi color effect 
+    // "version": "megacity",
+    'cursorColor': "0.03135, 0.26865, 0.43135", // color of the drop itself (leading part)
+    'cursorIntensity': "3.0",
+    'width': '120',
+    'slant': "180",
+    'fallSpeed': "0.15",
+    "bloomStrength": "0.1",
+    // "animationSpeed": "any number"
+    // "cycleSpeed": "any number"
+    // "ditherMagnitude": "1", 
+    "palette":
+      "0.03135, 0.26865, 0.43135, 1," + // blue
+      "0.03135, 0.26865, 0.43135, 0.5," + // blue
+      "0, 0, 0, 0",
+
+    // the gradient
+    // the closer the number is to 0 the more promininent it is.
+    // 0 -> 1
+    // 0 is background 
+    // 1 is text/foreground
+
+    // "palette": "0.0627,0.5373,0.8627,0,0.2,0.5,0,0.5,1,0.7,0,1",
+    // 3 colors, r,g,b and location on screen grandient
+  }
+
+  // const urlParams = new URLSearchParams(window.location.search)
+  // const config = makeConfig(Object.fromEntries(urlParams.entries()))
+
+  const config = makeConfig(mySettings)
   const useWebGPU = (await supportsWebGPU()) && ['webgpu'].includes(config.renderer?.toLowerCase())
   const solution = import(`../matrix/js/${useWebGPU ? 'webgpu' : 'regl'}/main.js`)
 
@@ -45,13 +76,23 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+
+canvas {
+  width: 100vw;
+  height: 200vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
 @supports (padding-top: env(safe-area-inset-top)) {
   body {
     padding: 0;
     height: calc(100% + env(safe-area-inset-top));
   }
 }
-body {
+/* body {
   background: black;
   overflow: hidden;
   margin: 0;
@@ -59,11 +100,6 @@ body {
   font-family: monospace;
   font-size: 2em;
   text-align: center;
-}
-
-canvas {
-  width: 100vw;
-  height: 100vh;
 }
 
 p {
@@ -124,5 +160,5 @@ p {
 .red:hover {
   border-color: crimson;
   color: white;
-}
+} */
 </style>
