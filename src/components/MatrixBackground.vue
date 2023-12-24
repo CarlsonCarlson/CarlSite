@@ -7,6 +7,7 @@
 <script setup lang="ts" allowJS="true">
 import { onMounted, ref } from 'vue'
 import makeConfig from '../matrix/js/config.js'
+// import makeConfig from '/matrix/js/config.js'
 // const makeConfig = require('../matrix/js/config.js')
 
 const canvas = ref(null)
@@ -71,6 +72,7 @@ onMounted(async () => {
   const config = makeConfig(mySettings)
   const useWebGPU = (await supportsWebGPU()) && ['webgpu'].includes(config.renderer?.toLowerCase())
   const solution = import(`../matrix/js/${useWebGPU ? 'webgpu' : 'regl'}/main.js`)
+  // const solution = import(`/public/matrix/js/${useWebGPU ? 'webgpu' : 'regl'}/main.js`)
 
   if (isRunningSwiftShader() && !config.suppressWarnings) {
     // Add the notice logic here
