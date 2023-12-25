@@ -8,6 +8,7 @@ export default defineConfig({ // base: '/CarlSite/',
   // root: 'src',  // Root directory set to 'src'
   // build: {
   //   outDir: '../dist',  // Output directory set to '../dist'
+    // minify: false,
     // sourcemap: true
   // },
   plugins: [
