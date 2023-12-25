@@ -11,7 +11,7 @@ export default defineConfig({ // base: '/CarlSite/',
     // minify: false,
     // sourcemap: true
   // },
-  base: '/CarlSite/',
+  // base: '/CarlSite/',
   plugins: [
     vue(),
   ],
