@@ -1,3 +1,7 @@
 [submodule "src/matrix"]
 	path = src/matrix
 	url = https://github.com/CarlsonCarlson/matrix
+
+[submodule "public/matrix"]
+	path = public/matrix
+	url = https://github.com/CarlsonCarlson/matrix

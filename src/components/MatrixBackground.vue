@@ -7,6 +7,8 @@
 <script setup lang="ts" allowJS="true">
 import { onMounted, ref } from 'vue'
 import makeConfig from '../matrix/js/config.js'
+// import makeConfig from '/matrix/js/config.js'
+// const makeConfig = require('../matrix/js/config.js')
 
 const canvas = ref(null)
 
@@ -17,15 +19,19 @@ onMounted(async () => {
 
   const supportsWebGPU = async () => {
     return (
-      window.GPUQueue != null &&
-      navigator.gpu != null &&
-      navigator.gpu.getPreferredCanvasFormat != null
+      (window as any).GPUQueue != null &&
+      (navigator as any).gpu != null &&
+      (navigator as any).gpu.getPreferredCanvasFormat != null
     )
   }
 
   const isRunningSwiftShader = () => {
-    const gl = canvas.value.getContext('webgl')
+    const gl = (canvas.value as unknown as HTMLCanvasElement).getContext('webgl')
+
+    if (!gl) return false
     const debugInfo = gl.getExtension('WEBGL_debug_renderer_info')
+
+    if (!debugInfo) return false;  // Add this line to check for null
     const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL)
     return renderer.toLowerCase().includes('swiftshader')
   }
@@ -66,6 +72,7 @@ onMounted(async () => {
   const config = makeConfig(mySettings)
   const useWebGPU = (await supportsWebGPU()) && ['webgpu'].includes(config.renderer?.toLowerCase())
   const solution = import(`../matrix/js/${useWebGPU ? 'webgpu' : 'regl'}/main.js`)
+  // const solution = import(`/public/matrix/js/${useWebGPU ? 'webgpu' : 'regl'}/main.js`)
 
   if (isRunningSwiftShader() && !config.suppressWarnings) {
     // Add the notice logic here
