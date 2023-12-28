@@ -1,5 +1,12 @@
 # carlSite
 
+## Versions
+### each version will be stored on a branch, master is the deployed version
+- v0.0 (12-28-23)
+   - (deployed on internet and works)
+- v0.1 (working)
+   - ui changes (want to make button for scroll / make resume more immediately accessible)
+
 Binary rain is in website!!!
 
 notes:
