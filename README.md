@@ -6,9 +6,15 @@
    - (deployed on internet and works)
 - v0.1 (working)
    - ui changes
-      - make it scroll down normally
-      - button to click to scroll down
-   - got mobile scroll to work
+      - make it scroll down normally [DONE]
+      - button to indicate scroll down that you can also click [DONE]
+   - change meta tags
+      - change title [DONE]
+      - change description [DONE]
+      - change favicon [DONE]
+   - got mobile scroll to work [DONE]
+   - make browser recognize it as dark background [DONE]
+      - tried making body background black to do this
 
 Binary rain is in website!!!
 
