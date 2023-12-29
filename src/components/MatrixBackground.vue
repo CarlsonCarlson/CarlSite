@@ -13,9 +13,9 @@ import makeConfig from '../matrix/js/config.js'
 const canvas = ref(null)
 
 onMounted(async () => {
-  document.addEventListener('touchmove', (e) => e.preventDefault(), {
-    passive: false
-  })
+  // document.addEventListener('touchmove', (e) => e.preventDefault(), {
+  //   passive: false
+  // })
 
   const supportsWebGPU = async () => {
     return (
@@ -91,7 +91,6 @@ canvas {
   top: 0;
   left: 0;
   z-index: -1; 
-  pointer-events: none;
 }
 
 @supports (padding-top: env(safe-area-inset-top)) {
