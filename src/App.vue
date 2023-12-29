@@ -26,10 +26,12 @@ function scrollToBottom() {
   </header>
   <div>
     <div class="flex justify-center items-center h-screen w-full relative">
-      <Title />
-      <div class="absolute bottom-12 mb-12 flex flex-col items-center" @click="scrollToBottom">
-        <p class="text-white text-sm mb-4">enter</p>
-        <IconArrow class="h-10"/>
+      <div class="mt-[-0%]">
+        <Title />
+      </div>
+      <div class="absolute bottom-10vh flex flex-col items-center" @click="scrollToBottom">
+        <p class="text-white text-xs md:text-sm mb-4">enter</p>
+        <IconArrow class="h-6 md:h-10"/>
       </div>
     </div>
     <div class="flex justify-center items-center h-screen w-full">
