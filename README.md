@@ -4,17 +4,20 @@
 ### each version will be stored on a branch, master is the deployed version
 - v0.0 (12-28-23)
    - (deployed on internet and works)
-- v0.1 (working)
+- v0.1 (12-29-23)
    - ui changes
       - make it scroll down normally [DONE]
       - button to indicate scroll down that you can also click [DONE]
+      - got mobile scroll to work [DONE]
    - change meta tags
       - change title [DONE]
       - change description [DONE]
       - change favicon [DONE]
-   - got mobile scroll to work [DONE]
    - make browser recognize it as dark background [DONE]
       - tried making body background black to do this
+   - changed fps to 30 from 60 to run on lower end devices [DONE]
+- v0.2 (working)
+   - make it responsive to all screen sizes
 
 Binary rain is in website!!!
 
