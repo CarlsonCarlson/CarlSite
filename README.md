@@ -1,5 +1,15 @@
 # carlSite
 
+## Versions
+### each version will be stored on a branch, master is the deployed version
+- v0.0 (12-28-23)
+   - (deployed on internet and works)
+- v0.1 (working)
+   - ui changes
+      - make it scroll down normally
+      - button to click to scroll down
+   - got mobile scroll to work
+
 Binary rain is in website!!!
 
 notes:
@@ -23,7 +33,8 @@ notes:
 
 ### sites that look dope
 
-hyperscience.com
+1. cyperpunk.net header bar is really nice + glitch effect on picture
+   - a bit of text to show my personality would be good just like (https://www.cyberpunk.net/us/en/cyberpunk-2077)
 
 ### Main TODOs
 - TODO: arrow to indicate scroll up

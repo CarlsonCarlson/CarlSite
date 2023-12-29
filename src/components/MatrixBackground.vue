@@ -91,6 +91,7 @@ canvas {
   top: 0;
   left: 0;
   z-index: -1; 
+  pointer-events: none;
 }
 
 @supports (padding-top: env(safe-area-inset-top)) {
