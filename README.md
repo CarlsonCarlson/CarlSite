@@ -18,6 +18,8 @@
    - changed fps to 30 from 60 to run on lower end devices [DONE]
 - v0.2 (working)
    - make it responsive to all screen sizes
+      - title screen [DONE]
+      - about me [DONE]
 
 Binary rain is in website!!!
 
