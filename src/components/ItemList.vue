@@ -3,7 +3,7 @@ import Item from './AnItem.vue'
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col gap-4 md:gap-3">
     <Item
       name="braindump ux"
       description="proactive ai assistant in notion like web app"

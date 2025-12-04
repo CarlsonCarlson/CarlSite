@@ -45,10 +45,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <header>
+  <div class="relative">
     <MatrixBackground />
-  </header>
-  <div>
     <div id="entrance" class="flex justify-center items-center h-screen w-full relative">
       <Title />
       <div class="absolute bottom-10vh flex flex-col items-center" @click="scrollToBottom">
@@ -56,13 +54,13 @@ onMounted(() => {
         <IconArrow class="h-6 md:h-10"/>
       </div>
     </div>
-    <div id="me" class="flex justify-center items-center h-screen">
-      <div class="flex justify-center items-center h-screen w-5/6">
+    <div id="me" class="flex justify-center items-center min-h-screen py-20">
+      <div class="flex justify-center items-center w-full px-6 md:px-12 lg:w-5/6 lg:px-0">
         <ItemList />
       </div>
     </div>
-    <div id="links" class="flex justify-center items-center h-screen">
-      <div class="flex justify-center items-center h-screen w-5/6">
+    <div id="links" class="flex justify-center items-center min-h-screen py-20">
+      <div class="flex justify-center items-center w-full px-6 md:px-12 lg:w-5/6 lg:px-0">
         <LinksList />
       </div>
     </div>

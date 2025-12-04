@@ -31,7 +31,7 @@ const descriptionText = url ? props.description.replace(url, '').trim().replace(
     <!-- <p class="text-white text-base font-bold mr-1 my-auto">$ cat {{ name }} - </p>
     <p class="text-white text-sm ml-2 my-auto">{{ description }}</p> -->
     <p class="text-white my-auto">
-      <span class="font-bold text-base whitespace-nowrap">$ {{ name }} -&nbsp;&nbsp;&nbsp;</span
+      <span class="font-bold text-base">$ {{ name }} -&nbsp;&nbsp;&nbsp;</span
       ><span class="text-sm">{{ descriptionText }}</span
       ><span v-if="url" class="text-sm"> | <a :href="url" target="_blank" rel="noopener noreferrer" class="text-[#599cab] hover:text-[#d3ebe9] underline">{{ url }}</a></span>
     </p>
