@@ -86,6 +86,20 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
+### Initialize Git Submodules
+
+This project uses git submodules for the matrix background effect. After cloning the repository, initialize the submodules:
+
+```sh
+git submodule update --init --recursive
+```
+
+Or initialize specific submodules:
+
+```sh
+git submodule update --init src/matrix public/matrix dist/matrix
+```
+
 ### Compile and Hot-Reload for Development
 
 ```sh

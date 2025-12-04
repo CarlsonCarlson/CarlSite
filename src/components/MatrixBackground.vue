@@ -86,11 +86,11 @@ onMounted(async () => {
 
 canvas {
   width: 100vw;
-  height: 200vh;
+  height: 300vh;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; 
+  z-index: -1;
 }
 
 @supports (padding-top: env(safe-area-inset-top)) {
