@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="matrix-container">
     <canvas ref="canvas"></canvas>
   </div>
 </template>
@@ -84,13 +84,19 @@ onMounted(async () => {
 
 <style scoped>
 
-canvas {
-  width: 100%;
-  height: 100%;
+.matrix-container {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 @supports (padding-top: env(safe-area-inset-top)) {
