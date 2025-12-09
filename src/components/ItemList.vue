@@ -25,10 +25,6 @@ import Item from './AnItem.vue'
       description="prototyping ai native phone that's safe for kids"
     />
     <Item
-      name="custom android home screen launcher"
-      description="prototyping ai native phone that's safe for kids"
-    />
-    <Item
       name="nimbus computer"
       description="founder"
     />
